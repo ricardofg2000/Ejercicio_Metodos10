@@ -23,18 +23,19 @@ public class Ejercicio10 {
 		num = Util.leerInt("Introduzca un número: ");
 		raiz = raizCuadrada(num);
 		Util.escribir(RAIZT + raiz);
-		if (raiz*raiz != num) {
-			resto = num - raiz*raiz;
+		if (raiz * raiz != num) {
+			resto = num - raiz * raiz;
 			Util.escribir(RESTOT + resto);
 		}
-		
+
 	}
 
 	private static int raizCuadrada(int num) {
 		int aprox;
-		for (aprox = 1; (aprox * aprox) <= num; aprox++);
+		for (aprox = 1; (aprox * aprox) <= num; aprox++)
+			;
 		aprox += -1;
-		return aprox; 
+		return aprox;
 	}
 
 }
